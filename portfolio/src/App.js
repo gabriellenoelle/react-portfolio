@@ -1,11 +1,32 @@
 import React from "react";
 import "./App.css";
-import { Typography, Box } from "@mui/material";
 import "@fontsource/roboto";
+import {
+  Typography,
+  Box,
+  AppBar,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  CssBaseline,
+  Grid,
+  Toolbar,
+  Container,
+} from "@mui/material";
+import { WbSunny } from "@mui/icons-material";
 
 const App = () => {
   return (
     <>
+    {/* <CssBaseline/> */}
+    <AppBar position="relative">
+      <Toolbar>
+        <WbSunny/>
+        <Typography variant="h6">hello</Typography>
+      </Toolbar>
+    </AppBar>
+    <main>
       <div>
         <header class="App-header">
           <Typography variant="h3">
@@ -29,6 +50,7 @@ const App = () => {
           </Typography>
         </Box>
       </div>
+      </main>
     </>
   );
 };
